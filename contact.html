@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Lusaka Style Boutique</title>
+  <meta name="description" content="Get in touch with Lusaka Style Boutique for styling consultations, WhatsApp orders, or boutique showroom enquiries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Lusaka Style Boutique Home">
+        <img src="assets/graphics/logo.svg" alt="Lusaka Style Boutique Logo">
+        <span class="logo-text">Lusaka Style Boutique<span>Lusaka, Zambia</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="news.html">News &amp; Offers</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="wrap contact-layout">
+      <!-- Contact Form Column -->
+      <div class="reveal">
+        <p class="kicker">Direct Consultation</p>
+        <h1>Get in Touch</h1>
+        <p class="lead">Have a question regarding sizes, custom tailoring, or collection availability? Send us a message or connect directly on WhatsApp.</p>
+        <p class="sample-note">Demonstration Contact Form · Front-end Simulated</p>
+
+        <!-- Dynamic Accessible Alerts -->
+        <div class="form-error" id="form-error" tabindex="-1" role="alert"></div>
+        <div class="form-success" id="form-success" tabindex="-1" role="status"></div>
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Your Full Name <span style="color:var(--gold-dark)">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="e.g., Mwamba Chanda" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email Address <span style="color:var(--gold-dark)">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="e.g., mwamba@example.com" required>
+          </div>
+
+          <div class="form-field">
+            <label for="subject">Enquiry Subject <span style="color:var(--gold-dark)">*</span></label>
+            <input id="subject" name="subject" type="text" placeholder="e.g., Sizing for Leopards Hill Wrap Dress" required>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Your Message <span style="color:var(--gold-dark)">*</span></label>
+            <textarea id="message" name="message" placeholder="Please describe what you are looking for..." required></textarea>
+          </div>
+
+          <button class="btn btn-gold" type="submit" style="justify-self:start">Send Demonstration Message</button>
+        </form>
+      </div>
+
+      <!-- Aside / Contact Info Cards -->
+      <aside class="reveal delay-1">
+        <!-- WhatsApp Setup & Direct Order Card -->
+        <article class="card" id="whatsapp-setup" style="border-left:4px solid #128c7e">
+          <p class="kicker" style="color:#128c7e">Fast Ordering</p>
+          <h2>WhatsApp Customer Care</h2>
+          <p>Ordering via WhatsApp is the quickest way to confirm availability, reserve pieces, and request custom styling in Lusaka.</p>
+          <p class="muted">To link your own active business number, open <code>js/script.js</code> and update <code>CONFIG.whatsappNumber</code> (digits only, e.g. <code>260971234567</code>).</p>
+          <a class="btn btn-whatsapp" style="margin-top:0.5rem" data-whatsapp data-whatsapp-message="Hello Lusaka Style Boutique, I would like to make an enquiry.">Message on WhatsApp</a>
+        </article>
+
+        <!-- Boutique Showroom Location -->
+        <article class="card" style="margin-top:1.5rem">
+          <p class="kicker">Showroom</p>
+          <h2>Boutique Location</h2>
+          <p><strong>Lusaka Style Boutique Atelier</strong></p>
+          <p class="muted">Plot 4821, Great East Road (Near Arcades Shopping Centre)<br>Lusaka, Zambia</p>
+          <div style="border-top:1px solid var(--cream-soft); padding-top:0.8rem; margin-top:0.8rem">
+            <p><strong>Opening Hours:</strong></p>
+            <p class="muted" style="margin-bottom:0.2rem">Monday – Friday: 08:30 – 17:30</p>
+            <p class="muted" style="margin-bottom:0.2rem">Saturday: 09:00 – 15:00</p>
+            <p class="muted">Sunday: Closed</p>
+          </div>
+        </article>
+
+        <!-- Email & Phone Channels -->
+        <article class="card" style="margin-top:1.5rem">
+          <p class="kicker">Communications</p>
+          <h2>Direct Channels</h2>
+          <p><strong>Email:</strong> <a href="mailto:info@lusakastyle.co.zm">info@lusakastyle.co.zm</a> (Sample)</p>
+          <p><strong>Phone:</strong> +260 211 000 000 (Sample)</p>
+        </article>
+
+        <!-- Social Media Presence -->
+        <article class="card" id="social" style="margin-top:1.5rem">
+          <p class="kicker">Social Channels</p>
+          <h2>Follow Our Looks</h2>
+          <ul style="list-style:none; padding:0; margin:0">
+            <li style="margin:0.5rem 0"><a href="#social" style="display:inline-flex; align-items:center; gap:0.4rem; color:var(--gold-dark)">&#9656; Instagram: @lusakastyleboutique</a></li>
+            <li style="margin:0.5rem 0"><a href="#social" style="display:inline-flex; align-items:center; gap:0.4rem; color:var(--gold-dark)">&#9656; Facebook: Lusaka Style Boutique</a></li>
+            <li style="margin:0.5rem 0"><a href="#social" style="display:inline-flex; align-items:center; gap:0.4rem; color:var(--gold-dark)">&#9656; TikTok: @lusakastyle</a></li>
+          </ul>
+        </article>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="logo-text">Lusaka Style Boutique</p>
+        <p>Contemporary clothing boutique designed for Lusaka, Zambia. Built as an academic demonstration for Northrise University SOD203 Multimedia Publishing by Team 2.</p>
+      </div>
+      <div>
+        <h3 class="kicker">Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="news.html">News &amp; Offers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="kicker">Lusaka Studio</h3>
+        <ul>
+          <li>Great East Road, Lusaka</li>
+          <li>Open Mon–Sat</li>
+          <li><a href="#whatsapp-setup">WhatsApp Assistant</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-legal">&copy; <span data-year></span> Lusaka Style Boutique — Academic Demonstration Project. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

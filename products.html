@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products Catalogue | Lusaka Style Boutique</title>
+  <meta name="description" content="Explore Lusaka Style Boutique's collection of shirts, trousers, dresses, footwear, and accessories tailored for contemporary Zambian style.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Lusaka Style Boutique Home">
+        <img src="assets/graphics/logo.svg" alt="Lusaka Style Boutique Logo">
+        <span class="logo-text">Lusaka Style Boutique<span>Lusaka, Zambia</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html" aria-current="page">Products</a></li>
+          <li><a href="news.html">News &amp; Offers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom:2rem">
+        <p class="kicker">The Collection</p>
+        <h1>Contemporary Fashion Catalogue</h1>
+        <p class="lead">Curated wardrobe essentials designed with natural linens, durable cottons, and refined Zambian details. Filter by category or search by keyword.</p>
+        <p class="sample-note">Demonstration items for Northrise University SOD203 Team 2</p>
+      </div>
+
+      <!-- Search & Category Filters -->
+      <div class="filters reveal">
+        <div class="form-field">
+          <label for="product-search" style="font-weight:600">Search Products</label>
+          <input id="product-search" type="search" placeholder="Type a keyword, e.g., linen, wrap dress, loafers, tote..." autocomplete="off">
+        </div>
+        <div>
+          <p id="filter-label" class="muted" style="margin-bottom:0.6rem; font-weight:600; font-size:0.9rem">Filter by Category</p>
+          <div class="chip-row" role="group" aria-labelledby="filter-label">
+            <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">All Looks</button>
+            <button class="chip" type="button" data-filter="shirts" aria-pressed="false">Shirts</button>
+            <button class="chip" type="button" data-filter="trousers" aria-pressed="false">Trousers</button>
+            <button class="chip" type="button" data-filter="dresses" aria-pressed="false">Dresses</button>
+            <button class="chip" type="button" data-filter="shoes" aria-pressed="false">Footwear</button>
+            <button class="chip" type="button" data-filter="accessories" aria-pressed="false">Accessories</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" data-product-grid>
+        <!-- Item 1: Kafue Linen Shirt -->
+        <article class="product-card reveal" data-category="shirts" data-search="kafue linen shirt cream natural summer campus office">
+          <div class="product-image-wrap">
+            <span class="product-badge">Bestseller</span>
+            <img src="assets/images/shirt-kafue.jpg" alt="Kafue Linen Shirt in natural cream" data-lightbox data-full="assets/images/shirt-kafue.jpg">
+          </div>
+          <h2>Kafue Linen Shirt</h2>
+          <p>Relaxed-fit long sleeve shirt woven from lightweight natural linen. Ideal for warm Lusaka days.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 380</p>
+            <p class="sizes">Sizes: S, M, L, XL</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Kafue Linen Shirt" data-whatsapp-price="ZMW 380">Order on WhatsApp</a>
+        </article>
+
+        <!-- Item 2: Cairo Road Oxford Shirt -->
+        <article class="product-card reveal delay-1" data-category="shirts" data-search="cairo road oxford shirt white formal business church work">
+          <div class="product-image-wrap">
+            <span class="product-badge">Formal</span>
+            <img src="assets/images/shirt-cairo.jpg" alt="Cairo Road Oxford Shirt in crisp white" data-lightbox data-full="assets/images/shirt-cairo.jpg">
+          </div>
+          <h2>Cairo Road Oxford Shirt</h2>
+          <p>Crisp tailored collar shirt with structured cuffs. Made for corporate workdays, Sunday service, and formal events.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 410</p>
+            <p class="sizes">Sizes: M, L, XL, XXL</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Cairo Road Oxford Shirt" data-whatsapp-price="ZMW 410">Order on WhatsApp</a>
+        </article>
+
+        <!-- Item 3: Olwende Chinos -->
+        <article class="product-card reveal delay-2" data-category="trousers" data-search="olwende chinos trousers khaki sand tailored casual smart">
+          <div class="product-image-wrap">
+            <span class="product-badge">Essential</span>
+            <img src="assets/images/trousers-olwende.jpg" alt="Olwende Chinos in tailored khaki" data-lightbox data-full="assets/images/trousers-olwende.jpg">
+          </div>
+          <h2>Olwende Chinos</h2>
+          <p>Straight-leg tailored cotton chinos with a modern tapered hem. Versatile comfort from desk to dinner.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 450</p>
+            <p class="sizes">Sizes: 30, 32, 34, 36</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Olwende Chinos" data-whatsapp-price="ZMW 450">Order on WhatsApp</a>
+        </article>
+
+        <!-- Item 4: Mutendere Wide Trousers -->
+        <article class="product-card reveal" data-category="trousers" data-search="mutendere wide trousers black relaxed pleat high waist elegant">
+          <div class="product-image-wrap">
+            <span class="product-badge">New Arrival</span>
+            <img src="assets/images/trousers-mutendere.jpg" alt="Mutendere Wide Trousers in classic black" data-lightbox data-full="assets/images/trousers-mutendere.jpg">
+          </div>
+          <h2>Mutendere Wide Trousers</h2>
+          <p>High-waisted, pleated wide-leg trousers designed for effortless movement, elegance, and evening events.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 470</p>
+            <p class="sizes">Sizes: S, M, L</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Mutendere Wide Trousers" data-whatsapp-price="ZMW 470">Order on WhatsApp</a>
+        </article>
+
+        <!-- Item 5: Leopards Hill Wrap Dress -->
+        <article class="product-card reveal delay-1" data-category="dresses" data-search="leopards hill wrap dress gold ochre evening celebration party">
+          <div class="product-image-wrap">
+            <span class="product-badge">Signature</span>
+            <img src="assets/images/dress-leopards.jpg" alt="Leopards Hill Wrap Dress with golden accents" data-lightbox data-full="assets/images/dress-leopards.jpg">
+          </div>
+          <h2>Leopards Hill Wrap Dress</h2>
+          <p>Flowing midi wrap dress designed to accentuate every silhouette. An eye-catching statement for special occasions.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 520</p>
+            <p class="sizes">Sizes: XS, S, M, L</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Leopards Hill Wrap Dress" data-whatsapp-price="ZMW 520">Order on WhatsApp</a>
+        </article>
+
+        <!-- Item 6: Woodlands Shirt Dress -->
+        <article class="product-card reveal delay-2" data-category="dresses" data-search="woodlands shirt dress cream midi belted stylish daytime">
+          <div class="product-image-wrap">
+            <span class="product-badge">Versatile</span>
+            <img src="assets/images/dress-woodlands.jpg" alt="Woodlands Shirt Dress with belt in ivory cream" data-lightbox data-full="assets/images/dress-woodlands.jpg">
+          </div>
+          <h2>Woodlands Shirt Dress</h2>
+          <p>Crisp button-front midi dress featuring a detachable belt. Sophisticated, modest, and breezy for all-day wear.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 495</p>
+            <p class="sizes">Sizes: S, M, L, XL</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Woodlands Shirt Dress" data-whatsapp-price="ZMW 495">Order on WhatsApp</a>
+        </article>
+
+        <!-- Item 7: Mosi-oa-Tunya Leather Loafers (NEW FOOTWEAR) -->
+        <article class="product-card reveal" data-category="shoes" data-search="mosi leather loafers shoes footwear brown slip on formal handcrafted">
+          <div class="product-image-wrap">
+            <span class="product-badge">Footwear</span>
+            <img src="assets/images/shoes-loafers.jpg" alt="Mosi-oa-Tunya Leather Loafers in rich cognac brown" data-lightbox data-full="assets/images/shoes-loafers.jpg">
+          </div>
+          <h2>Mosi Leather Loafers</h2>
+          <p>Hand-burnished leather loafers with cushioned soles. Sophisticated styling for trousers and smart casual looks.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 580</p>
+            <p class="sizes">Sizes: 40, 41, 42, 43, 44</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Mosi Leather Loafers" data-whatsapp-price="ZMW 580">Order on WhatsApp</a>
+        </article>
+
+        <!-- Item 8: Kalambo Block Heel Sandals (NEW FOOTWEAR) -->
+        <article class="product-card reveal delay-1" data-category="shoes" data-search="kalambo block heel sandals shoes footwear straps gold heels party">
+          <div class="product-image-wrap">
+            <span class="product-badge">Footwear</span>
+            <img src="assets/images/shoes-sandals.jpg" alt="Kalambo Block Heel Sandals with delicate straps" data-lightbox data-full="assets/images/shoes-sandals.jpg">
+          </div>
+          <h2>Kalambo Strap Sandals</h2>
+          <p>Minimalist ankle-strap sandals with a comfortable 2-inch block heel. Beautifully pairs with wrap and shirt dresses.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 460</p>
+            <p class="sizes">Sizes: 37, 38, 39, 40</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Kalambo Strap Sandals" data-whatsapp-price="ZMW 460">Order on WhatsApp</a>
+        </article>
+
+        <!-- Item 9: Copperbelt Bead Necklace -->
+        <article class="product-card reveal delay-2" data-category="accessories" data-search="copperbelt bead necklace accessory jewelry artisanal handmade">
+          <div class="product-image-wrap">
+            <span class="product-badge">Artisanal</span>
+            <img src="assets/images/accessory-necklace.jpg" alt="Handcrafted Copperbelt Bead Necklace" data-lightbox data-full="assets/images/accessory-necklace.jpg">
+          </div>
+          <h2>Copperbelt Bead Necklace</h2>
+          <p>Hand-strung statement necklace featuring polished Zambian mineral and earthen beads. A distinctive cultural accent.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 150</p>
+            <p class="sizes">Size: One Size</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Copperbelt Bead Necklace" data-whatsapp-price="ZMW 150">Order on WhatsApp</a>
+        </article>
+
+        <!-- Item 10: Arcades Canvas Tote -->
+        <article class="product-card reveal" data-category="accessories" data-search="arcades canvas tote bag accessory everyday market campus durable">
+          <div class="product-image-wrap">
+            <span class="product-badge">Accessory</span>
+            <img src="assets/images/accessory-tote.jpg" alt="Arcades Canvas Tote with leather handles" data-lightbox data-full="assets/images/accessory-tote.jpg">
+          </div>
+          <h2>Arcades Canvas Tote</h2>
+          <p>Heavyweight structured canvas tote reinforced with vegan leather straps. Roomy enough for books, laptops, and market finds.</p>
+          <div class="product-details">
+            <p class="price"><span>ZMW</span> 180</p>
+            <p class="sizes">Size: One Size</p>
+          </div>
+          <a class="btn btn-whatsapp" data-whatsapp data-whatsapp-product="Arcades Canvas Tote" data-whatsapp-price="ZMW 180">Order on WhatsApp</a>
+        </article>
+      </div>
+
+      <!-- Empty Results State -->
+      <div class="empty-state" id="no-results" role="status">
+        <h2>No items match your search</h2>
+        <p class="muted">Try adjusting your keyword or switch to <strong>All Looks</strong> to view the full catalogue.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="logo-text">Lusaka Style Boutique</p>
+        <p>Contemporary clothing boutique designed for Lusaka, Zambia. Built as an academic demonstration for Northrise University SOD203 Multimedia Publishing by Team 2.</p>
+      </div>
+      <div>
+        <h3 class="kicker">Catalogue</h3>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="about.html">Brand Story</a></li>
+          <li><a href="news.html">News &amp; Offers</a></li>
+          <li><a href="contact.html">Custom Orders</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="kicker">Direct Contact</h3>
+        <ul>
+          <li>Lusaka, Zambia</li>
+          <li><a href="contact.html#whatsapp-setup">WhatsApp Assistant</a></li>
+          <li><a href="contact.html">Leave an Enquiry</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-legal">&copy; <span data-year></span> Lusaka Style Boutique — Academic Demonstration Project. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox Modal Dialog -->
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged Image Viewer">
+    <div class="lightbox-inner">
+      <img src="" alt="">
+      <p class="lightbox-caption"></p>
+      <button class="btn btn-gold lightbox-close" type="button">Close Image</button>
+    </div>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
